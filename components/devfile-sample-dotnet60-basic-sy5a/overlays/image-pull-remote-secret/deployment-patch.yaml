@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-sy5a
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/redhat-appstudio-qe/rs-demos-zcqw-tenant/component-annotation-dotnet-component/devfile-sample-dotnet60-basic-sy5a@sha256:ba71ab6a8fb8c849fabd6f4860116977cdda7f44b1f5273e52aec66e7866566a
+        name: main
+        resources: {}
+status: {}
